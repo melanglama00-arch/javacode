@@ -1,0 +1,59 @@
+Exceptions:
+Error: 
+Types Exception: 
+1: Checked -> compile time exception
+2: unchecked -> runtime exception
+
+try{
+    //business logic // risky code///
+}catch(Exception e){
+
+}
+catch(IOException e){
+    //handling code
+}catch(FileNotFoundException e){
+    System.out.println("Error :"+e.getMessage());
+}finally{
+    //
+}
+
+
+Best Practicesfor Exception handling
+1-> catch specific Exception
+2-> never Leave Catch blocks empty
+3-> Use Meaningful Error Message
+4-> Do not use exception for normal flow control
+5-> Log the Exception (java.util.logging),LOg4j, SLF4j
+6-> Use finally or Try-with resources
+7-> Throw Exceptions with Clear Context-> throw new Exceptio
+
+How to avoid Exceptions. 
+1->Null checking
+2-> Validate User Input
+3->Check array Bounds
+4-> Validate FileExistece
+
+Multiple Catch blocks
+
+
+Throw vs Throws
+if(){
+    throw new Exception("asdasdasda");
+}
+
+void read()  throws IOException{
+
+}
+
+
+Custom  Exception:
+-> 
+class InvalidAgeException extends Exception{
+    public InvalidAgeException(String message){
+        super(message);
+    }
+}
+
+
+
+
